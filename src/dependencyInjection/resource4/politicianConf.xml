@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">     
+    
+    <bean class="dependencyInjection.deepBeans.PoliticianHistory" name="PolHistory">
+     <property name="partyName" value="Congress"/>
+     <property name="established" value="1988"/>
+    </bean>
+  <bean class="dependencyInjection.deepBeans.Politician_DI_BySetterMethod" name="Politician1">
+     <property name="name" value="sara"/>
+     <property name="Age" value="101"/>
+     <property name="politicianHistory" ref="PolHistory"/>
+    </bean>  
+</beans>

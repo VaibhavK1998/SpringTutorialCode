@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <bean class="autowiring.beans5.MarketShopsHelper" name="Helper">
+     <property name="ShopName" value="D-Mart"/>
+     <property name="ShopAddress" value="chandur bazar"/>
+    </bean>
+    <bean class="autowiring.beans5.Market_AutowiringByXml" name="market" autowire="byType">
+     <property name="marketName" value="cotton market"/>
+     <property name="established" value="1998"/>
+    </bean>
+</beans>

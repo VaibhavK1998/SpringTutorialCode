@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <bean class="beanAwarnes.beans.ApplicationContextAwareEx" name="obj1">
+     <property name="rollNo" value="101"/>
+     <property name="id" value="1"/>
+    </bean>
+    <bean class="beanAwarnes.beans.HelperBeanFactory" name="obj2">
+     <property name="address" value="amravati"/>
+    </bean>
+</beans>

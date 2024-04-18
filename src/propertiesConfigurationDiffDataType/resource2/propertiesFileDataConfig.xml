@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="propertiesConfigurationDiffDataType/resource2/data.properties"/>
+        </bean>
+        
+ <bean class="propertiesConfigurationDiffDataType.beanT.PropertieFileExaBean" name="prop">
+     <property name="Name" value="Vaibhav"/>
+     <property name="Id" value="101"/>
+     <property name="skills">
+     <map>
+     <entry key="skill1" value="${Vaibhav.Skill1}"></entry>
+      <entry key="skill2" value="${Vaibhav.Skill2}"></entry>
+       <entry key="skill3" value="${Vaibhav.Skill3}"></entry>
+     </map>
+     </property>
+    </bean>
+</beans>
