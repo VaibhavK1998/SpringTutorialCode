@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-04-19T12:30:07.336828100Z</date>
+  <millis>1713529807336</millis>
+  <nanos>828100</nanos>
+  <sequence>0</sequence>
+  <logger>LoggingExa1</logger>
+  <level>SEVERE</level>
+  <class>logging.LoggingExa1</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>we found technical error</message>
+</record>
+<record>
+  <date>2024-04-19T12:30:07.395064500Z</date>
+  <millis>1713529807395</millis>
+  <nanos>64500</nanos>
+  <sequence>1</sequence>
+  <logger>LoggingExa1</logger>
+  <level>WARNING</level>
+  <class>logging.LoggingExa1</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>memory space full</message>
+</record>
+<record>
+  <date>2024-04-19T12:30:07.396047100Z</date>
+  <millis>1713529807396</millis>
+  <nanos>47100</nanos>
+  <sequence>2</sequence>
+  <logger>LoggingExa1</logger>
+  <level>INFO</level>
+  <class>logging.LoggingExa1</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>messages working</message>
+</record>
+</log>
