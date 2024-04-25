@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">     
+    <bean class="springExpressions.beans8.ElectronicsPrice" name="Eprice">
+     <property name="priceBeforeGst" value="13000.98"></property>
+     <property name="priceAfterGst" value="14723.90"></property>
+     <!-- <property name="itemId" value="#{Eitem.itemId}"></property> -->
+     <property name="itemId" value="#{Eitem.getItemId()}"></property>
+    </bean>
+    <bean class="springExpressions.beans8.ElectronicsItems" name="Eitem">
+     <property name="name" value="Tv"></property>
+     <property name="size" value="16*16"></property>
+     <property name="itemId" value="#{10+10}"></property>
+     <property name="ePrice" value="#{Eprice}"></property>
+    </bean>
+</beans>
