@@ -16,6 +16,15 @@ public class LoggingByLog4jFileAppender {
 		logger.info("this is info");
 		System.out.println("hello");
 		
+		Test.test();
 	}
 
+	static class Test{
+		public static void test() {
+			Logger l1=Logger.getLogger("Test");
+			l1.fatal("test msg class");
+			
+		}
+	}
 }
+

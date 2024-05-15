@@ -20,11 +20,11 @@ public class LoggingExa1 {
 			
 			Logger logger=Logger.getLogger("LoggingExa1");// we have to get object of logger class
 			logger.addHandler(fileHandler);// here we adding our log to this file
-			logger.setLevel(Level.SEVERE);// we use this to show which kind of level msg should be add in logger file
+			logger.setLevel(Level.INFO);// we use this to show which kind of level msg should be add in logger file
 			logger.log(Level.SEVERE, "we found technical error");
 			logger.log(Level.WARNING, "memory space full");
 			logger.log(Level.INFO, "messages working");
-			logger.log(Level.WARNING, "memory space full");
+			logger.log(Level.WARNING, "memory space fulllllllllllllllllllll");
 			System.out.println("------------------------------------------------------");
 		} catch (SecurityException | IOException e) {
 			// TODO Auto-generated catch block
