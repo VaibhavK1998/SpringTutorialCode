@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 import org.apache.log4j.PropertyConfigurator;
 //lecture 16
-public class Loggin_byLog4J {
+public class Loggin_byLog4JOnConsole {
 
 	public static void main(String[] args) {
 		//BasicConfigurator.configure();// if we not write this then our logger will not work because this class set the basic configuration we need for logging.
